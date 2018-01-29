@@ -3,9 +3,8 @@ import { connect } from 'react-redux';
 import { StyleSheet, Text, View } from 'react-native';
 
 class MainScreen extends React.Component {
-
   static navigationOptions = {
-    tabBarLabel: 'MAIN'
+    tabBarLabel: 'MAIN',
   };
 
   render() {
@@ -22,18 +21,17 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 25,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 });
 
 const mapStateToProps = state => ({
-  state: state,
+  state,
 });
 
 const mapDispatchToProps = dispatch => ({
 
 });
 
-export default connect( mapStateToProps, mapDispatchToProps )(MainScreen);
-
+export default connect(mapStateToProps, mapDispatchToProps)(MainScreen);
 

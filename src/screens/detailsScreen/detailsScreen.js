@@ -3,9 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 
 class DetailsScreen extends React.Component {
-
   static navigationOptions = {
-    tabBarLabel: 'DETAILS'
+    tabBarLabel: 'DETAILS',
   };
 
   render() {
@@ -23,7 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 25,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 });
 
@@ -32,8 +31,8 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = state => ({
-  state: state,
+  state,
 });
 
-export default connect( mapStateToProps, mapDispatchToProps )(DetailsScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(DetailsScreen);
 

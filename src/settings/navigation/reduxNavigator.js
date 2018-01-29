@@ -3,7 +3,7 @@ import * as ReactNavigation from 'react-navigation';
 import { connect } from 'react-redux';
 import RootNavigation from './rootNavigation';
 
-function ReduxNavigation ( props ) {
+function ReduxNavigation(props) {
   const { dispatch, navigation } = props;
   const nav = ReactNavigation.addNavigationHelpers({
     dispatch,
@@ -11,8 +11,8 @@ function ReduxNavigation ( props ) {
   });
   return (
     <RootNavigation navigation={ nav } />
-  )
+  );
 }
 
 const mapStateToProps = state => ({ navigation: state.navigation });
-export default connect( mapStateToProps )( ReduxNavigation )
+export default connect(mapStateToProps)(ReduxNavigation);

@@ -13,4 +13,3 @@ const DrawerStack = TabNavigator({
 
 export default DrawerStack;
 
-
