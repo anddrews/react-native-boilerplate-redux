@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { StyleSheet, Text, View } from 'react-native';
+import { SunShine } from '../../components';
 
 class MainScreen extends React.Component {
   static navigationOptions = {
@@ -10,7 +11,7 @@ class MainScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text> MAIN SCREEN</Text>
+        <SunShine/>
       </View>
     );
   }
